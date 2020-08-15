@@ -1,10 +1,18 @@
 # CardsGame
 
+##API's supported for Users
+
+1. startGame
+2. whoseTurn
+3. pickCard
+4. getCardGameDetails
 
 1.startGame() POST api
+
 http://127.0.0.1:5000/startGame
 
 Input: 
+
 {
    "players":[
       {
@@ -17,15 +25,17 @@ Input:
 }
 
 Output:
+
 All the Players have joined. charan should start the game
 
 
-2. whoseTurn GET api
+2.whoseTurn GET api
+
 http://127.0.0.1:5000/whoseTurn
 
 Output: reddy
 
-3. pickCard POST api
+3.pickCard POST api
 http://127.0.0.1:5000/pickCard
 
 3.1 pickCard(general)
@@ -53,11 +63,12 @@ Input:
 Output:
 Seven of Hearts
 
-4. getCardGameDetails GET api
+4.getCardGameDetails GET api
 
 http://127.0.0.1:5000/getGameDetails
 
 Output: 
+
 Game id:2534197774
 Player1: reddy with picked cards:[Ace of Diamonds,Three of Diamonds,Eight of Clubs,].
 Player2: charan with picked cards:[Eight of Diamonds,Seven of Hearts,].
