@@ -78,7 +78,7 @@ class Deck:
             for i in range(len(self.deck)):
                 if self.deck[i].suit == 'Hearts' or self.deck[i].suit == 'Diamonds':
                     return self.deck.pop(i)
-        else:
+        elif color == 'BLACK':
             for i in range(len(self.deck)):
                 if self.deck[i].suit == 'Spades' or self.deck[i].suit == 'Clubs':
                     return self.deck.pop(i)
